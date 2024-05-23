@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+        const print = (...args) => console.log(...args)
+        const sabores = ['Fresa', 'Kiwi', 'Pistache']
+        print(`El número de sabores es ${sabores.length}`,sabores)
+        const contarSabores = () => {
+            print(`El número de sabores es`,sabores.length)
+        }
+        const mostrarSabores = () => {
+            print(`Los sabores actuales son`,sabores)
+        }
+        const agregarSabor = (sabor) => {
+            sabores.push(sabor)
+            print(`sabor ${sabor} agregado`)
+        }
+        const saludar = (nombre) => {
+            print(`¡Hola ${nombre}, bienvenido a Git!`)
+        }
+        function main(){
+            saludar(prompt('Ingresa tu nombre'))
+            mostrarSabores()
+            agregarSabor('Mamey')
+            contarSabores()
+            mostrarSabores()
+            agregarSabor('Chocolate')
+            contarSabores()
+        }
+        main()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
