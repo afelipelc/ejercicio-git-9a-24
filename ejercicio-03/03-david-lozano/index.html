@@ -20,13 +20,12 @@
             console.log("sabor " + sabor + " agregado");
         }
 
-        function saludar() {
-            let saludo = prompt("¿Cómo te llamas?")
-            console.log("!hola " + saludo + ", bienvenido a Git¡")
+        function saludar(nombre) {
+            console.log(`!hola ${nombre}, bienvenido a Git¡`)
         }
 
         function main () {
-            saludar()
+            saludar(prompt("¿Cómo te llamas?"))
             mostrarSabores()
             agregarSabor("Kiwi")
             contarSabores()
