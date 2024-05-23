@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo 3</title>
+</head>
+<body>
+  <script>
+  //#1
+  let sabores = ['dulce', 'salado', 'picante', 'amargo', 'ácido'];
+
+  //#2
+  function contarSabores() {
+    let cantidadSabores = sabores.length;
+    console.log("Cantidad de sabores:", cantidadSabores);
+  }
+
+  //#3
+  function mostrarSabores() {
+    console.log("Los sabores son los siguientes: ", sabores);
+  }
+
+  //#4
+  function agregarSabor(nuevoSabor) {
+    sabores.push(nuevoSabor);
+    console.log(`Sabor ${nuevoSabor} agregado`);
+  }
+
+  //#5
+  function saludar(nombre) {
+    console.log(`¡Hola ${nombre}, bienvenido a Git!`);
+  }
+
+  //#6
+  function main() {
+    let nombreUsu = prompt("¿Cuál es tu nombre?");
+    saludar(nombreUsu);
+    mostrarSabores();
+    agregarSabor('fresa');
+    contarSabores();
+    mostrarSabores();
+    agregarSabor('sandia');
+    contarSabores();
+  }
+
+  //#7
+  main();
+
+</script>
+  </script>
+</body>
+</html>
