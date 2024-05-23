@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+</head>
+
+<body>
+    <h1 style="display: flex; justify-content: center; font-family: Arial, sans-serif;">Verificar la consola mi pana ;)</h1>
+    <script>
+
+        let sabores = [
+            'Menta',
+            'Vainilla',
+            'Piña'
+        ];
+
+        function contarSabores() {
+            console.log(`Cantidad de sabores: ${sabores.length}`);
+        }
+
+        function mostrarSabores() {
+            console.log('Sabores:', sabores);
+        }
+
+        function agregarSabor(sabor) {
+            sabores.push(sabor);
+            console.log(`Sabor ${sabor} agregado`);
+        }
+
+        function saludar(nombre) {
+            console.log(`¡Hola ${nombre}, bienvenido a Git!`);
+        }
+
+        function main() {
+            let nombreUsuario = prompt('Por favor, ingresa tu nombre:');
+            saludar(nombreUsuario);
+
+            mostrarSabores();
+
+            let nuevoSabor1 = prompt('Ingresa un nuevo sabor para agregar:');
+            agregarSabor(nuevoSabor1);
+
+            contarSabores();
+
+            mostrarSabores();
+
+            let nuevoSabor2 = prompt('Ingresa otro nuevo sabor para agregar:');
+            agregarSabor(nuevoSabor2);
+
+            contarSabores();
+        }
+
+        main();
+    </script>
+</body>
+
+</html>
