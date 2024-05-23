@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <script>
+        const sabores = [
+            "Pistache",
+            "Frijoles",
+            "Clamato"
+        ]
+
+        const contarSabores= ()=>{
+            console.log(sabores.length);
+        }
+        
+
+        const  mostrarSabores= ()=>{
+            sabores.forEach(function (sabor) {
+                console.log(sabor);
+            });
+        }
+
+        const agregarSabor=(sabor)=>{
+            sabores.push(sabor)
+            console.log(`Sabor ${sabor} agregado`);
+        }
+
+        const saludar=(nombre)=>{
+            console.log(`!Hola ${nombre}, bienvenido a Git!`);
+        }
+
+        const main=()=>{
+            saludar(prompt ('¿Cual es tu nombre?', "Shalanzila"));
+            mostrarSabores();
+            agregarSabor("Sandia");
+            contarSabores();
+            mostrarSabores();
+            agregarSabor("Kiwi");
+            contarSabores();
+        }
+        main();
+    </script>
+
+</head>
+
+<body>
+    <h1>Ejercicio 3</h1>
+</body>
+
+</html>
