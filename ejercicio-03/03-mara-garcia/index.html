@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rama 03</title>
+
+    <script>
+        // Arreglo de sabores
+        const sabores = ['Piña', 'Kiwi', 'Maracuya'];
+
+        // Función para contar sabores
+        function contarSabores() {
+            console.log(`Cantidad de sabores: ${sabores.length}`);
+        }
+
+         // Función para mostrar sabores
+         function mostrarSabores() {
+            console.log('Sabores:');
+            sabores.forEach((sabor, index) => {
+                console.log(`Sabor ${index + 1}: ${sabor}`);
+            });
+        }
+
+        // Función para agregar un sabor
+        function agregarSabor(sabor) {
+            sabores.push(sabor);
+            console.log(`Sabor ${sabor} agregado`);
+        }
+
+        // Función para saludar
+        function saludar(nombre) {
+            console.log(`¡Hola ${nombre}, bienvenido a Git!`);
+        }
+
+        // Función principal
+        function main() {
+            const nombreUsuario = prompt('Introduce tu nombre:');
+            saludar(nombreUsuario);
+
+            mostrarSabores();
+
+           // const nuevoSabor1 = prompt('Introduce un nuevo sabor para agregar:');
+            agregarSabor(prompt('Introduce el sabor'));
+
+            contarSabores();
+            mostrarSabores();
+
+            //const nuevoSabor2 = prompt('Introduce otro nuevo sabor para agregar:');
+            agregarSabor(prompt('Introduce el sabor'));
+
+            contarSabores();
+        }
+    </script>
+</head>
+<body>
+    <h1>Aguas Frescas de:</h1>
+    <button onclick="main()">Iniciar</button>
+</body>
+</html>
