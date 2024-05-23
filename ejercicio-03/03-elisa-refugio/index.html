@@ -8,7 +8,7 @@
 <body>
   <script>
   //#1
-  let sabores = ['dulce', 'salado', 'picante', 'amargo', 'áccido'];
+  let sabores = ['dulce', 'salado', 'picante', 'amargo', 'ácido'];
 
   //#2
   function contarSabores() {
@@ -24,18 +24,18 @@
   //#4
   function agregarSabor(nuevoSabor) {
     sabores.push(nuevoSabor);
-    console.log("Sabor " + nuevoSabor + " agregado");
+    console.log(`Sabor ${nuevoSabor} agregado`);
   }
 
   //#5
-  function saludar() {
-    let nombre = prompt("¿Cuál es tu nombre?");
+  function saludar(nombre) {
     console.log(`¡Hola ${nombre}, bienvenido a Git!`);
   }
 
   //#6
   function main() {
-    saludar();
+    let nombreUsu = prompt("¿Cuál es tu nombre?");
+    saludar(nombreUsu);
     mostrarSabores();
     agregarSabor('fresa');
     contarSabores();
