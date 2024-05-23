@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+</head>
+<body>
+    <script>
+        //Arreglo de sabores
+        let sabores = ["Vainilla", "Fresa", "Coco"];
+
+        //Función para contar sabores...
+        function contarSabores () {
+            console.log(`Cantidad de sabores ${sabores.length}`);
+        }
+
+
+        //Función para mostrar sabores
+        function mostrarSabores() {
+            console.log("Sabores: " + sabores.join(" ,"))
+        }
+
+        //Funcion para agregar un sabor
+        function agregarSabor(nuevoSabor) {
+            sabores.push(nuevoSabor);
+            console.log(`Sabor ${nuevoSabor} agregado`);
+            
+        }
+        //Funcion para saludar
+        function saludar(nombre) {
+            document.write(`Hola! ${nombre} Bienvenido a GitHub`);
+        }
+
+        function main() {
+            let  nombreUsuario = prompt("Ingresaq tu nombre: "); 
+            saludar(nombreUsuario);
+            mostrarSabores();
+
+            let nuevoSabor1 = prompt("Ingresa un nuevo sabor para agregar: ");
+            agregarSabor(nuevoSabor1);
+            contarSabores();
+            mostrarSabores();
+
+            let nuevoSabor2 = prompt("Ingresa otro sabor: ");
+            agregarSabor(nuevoSabor2);
+            contarSabores();
+        }
+
+        main()
+
+    </script>
+</body>
+</html>
