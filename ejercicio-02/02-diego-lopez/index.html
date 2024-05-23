@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nombre = "Diego"
+        console.log(nombre)
+        const curso = "Git"
+        console.log(`Hola soy ${nombre}, estoy utilizando ${curso}`)
+        const evaluate = string => {
+            const values = [
+                "git",
+                "Git",
+                "GIT"
+            ]
+            return values.some(value => value === string)
+        }
+        const mensaje = evaluate(curso) ? "Git es muy importante para el desarrollo de software" : "algo es algo"
+        console.log(mensaje)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
