@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sabores = ["Amargo", " Picante", " Salado", " Sandia"];
+
+        //contar
+        function contarSabor(){
+            console.log(`Hay ${sabores.length} sabores`);
+        }
+      
+
+        //monstrar sabor
+        function mostrarSabor(){
+            console.log(`Los sabores son: ${sabores}`);
+        }
+       
+        //nuevo sabor
+        function agregarSabor(nuevoSabor) {
+            sabores.push(nuevoSabor);
+            console.log(`Sabor ${nuevoSabor} agregado`);
+        }
+
+        //saludar
+        function saludar(nombre) {
+            console.log(`¡Hola ${nombre}, bienvenido a Git!`);
+        }
+
+        //funcion main
+        function main() {
+            // variable nombre
+            let nombreUsuario = prompt("Inserta tú nombre:");
+            saludar(nombreUsuario);
+
+            //llamamos a la funcio mostrar
+            mostrarSabor();
+
+            // nuevo sabor
+            let nuevoSabor1 = "Manzana";//prompt("Agrega un nuevo sabor:");
+            agregarSabor(nuevoSabor1);
+
+            // función contar
+            contarSabor();
+
+            // funcion mostrar sabores
+            mostrarSabor();
+
+            // Agregar otro nuevo sabor
+            let nuevoSabor2 = "Mango";//prompt("Agrega otro sabor:");
+            agregarSabor(nuevoSabor2);
+
+            // funcio contar
+            contarSabor();
+        }
+
+        
+        main();
+
+      
+
+    </script>
+</body>
+</html>
