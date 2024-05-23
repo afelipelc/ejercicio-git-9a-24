@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
     <script>
-        function print(...args){
-            console.log(...args)
-        }
+        const print = (...args) => console.log(...args)
         const sabores = ['Fresa', 'Kiwi', 'Pistache']
         print(`El número de sabores es ${sabores.length}`,sabores)
-        const contarSabores = (arr = sabores) => {
-            print(`El número de sabores es`,arr.length)
+        const contarSabores = () => {
+            print(`El número de sabores es`,sabores.length)
         }
-        const mostrarSabores = (arr = sabores) => {
-            print(`Los sabores actuales son`,arr)
+        const mostrarSabores = () => {
+            print(`Los sabores actuales son`,sabores)
         }
-        const agregarSabor = (sabor, arr = sabores) => {
-            arr.push(sabor)
+        const agregarSabor = (sabor) => {
+            sabores.push(sabor)
             print(`sabor ${sabor} agregado`)
         }
         const saludar = (nombre) => {
@@ -25,12 +23,12 @@
         }
         function main(){
             saludar(prompt('Ingresa tu nombre'))
-            mostrarSabores(sabores)
-            agregarSabor('Mamey',sabores)
-            contarSabores(sabores)
-            mostrarSabores(sabores)
-            agregarSabor('Chocolate',sabores)
-            contarSabores(sabores)
+            mostrarSabores()
+            agregarSabor('Mamey')
+            contarSabores()
+            mostrarSabores()
+            agregarSabor('Chocolate')
+            contarSabores()
         }
         main()
     </script>
